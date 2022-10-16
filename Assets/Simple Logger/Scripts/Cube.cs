@@ -6,7 +6,7 @@ namespace Nasser.io.SimpleLogger
     public class Cube : MonoBehaviour
     {
         Rigidbody rb;
-        public float shakeDown = 1f;
+        float shakeDown = 0f;
         void Start()
         {
             Debug.Log("Cube");
@@ -27,7 +27,7 @@ namespace Nasser.io.SimpleLogger
         private void OnMouseDown()
         {
             Debug.Log("Click  ->  " + count++);
-            transform.localScale = new Vector3(3,3,3);
+            transform.localScale = new Vector3(3, 3, 3);
             shakeDown = 0;
         }
         private void OnMouseEnter()
