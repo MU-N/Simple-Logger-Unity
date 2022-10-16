@@ -71,7 +71,7 @@ namespace Nasser.io.SimpleLogger
         {
             loggerInfoTemp.logValue = $"[{DateTime.Now.ToString("HH:mm:ss")}]: {logString}";
 
-            if (type == LogType.Error)
+            if (type == LogType.Error || type == LogType.Exception )
                 loggerInfoTemp.LogColor = Color.red;
             if (type == LogType.Warning)
                 loggerInfoTemp.LogColor = Color.yellow;
